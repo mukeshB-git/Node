@@ -19,6 +19,11 @@ app.get('/CSS', (req, res) => {
     res.sendFile(__dirname + '/public/CSS.html')
 });
 
+app.get('/endpoint', (req, res) => {
+    console.log("you reached endpoint")
+    res.send("you reached endpoint")
+});
+
 
 const tech = io.of('/tech');
 
